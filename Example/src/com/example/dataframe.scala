@@ -48,6 +48,9 @@ object dataframe {
       val df3=df2.join(df1,Seq("id"),"left_outer");
       val df4= df3.filter(df3("nz port").isNull);
       df4.show(false);
+      
+      
+      
       //df2.filter(df2("nz")===df1("nz port")).show();
      // df3.filter(df3("nz")=!=df3("nz port")).show();
       //df3("nz port").contains("null");
